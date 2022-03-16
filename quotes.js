@@ -8,6 +8,10 @@
 //     });
 // }
 //
+
+const apiKey = "0d8aaf3201d6d956215eccb20212108651304c3eaa5ebdcdd2cadcb4499e36fa";
+// const apiKey = "89e8468cba55df3a9014890ed6bb57309649ec8c010d4260e05b827e91bab9cb";
+
 const getResp = async () => {
   const result = await fetch("https://type.fit/api/quotes");
   const data = await result.json();
@@ -22,7 +26,7 @@ const getResp = async () => {
 };
 
 const getImages = async (query) => {
-  const searchURL = `https://bad-mf.herokuapp.com/search?q=${query}&api_key=0d8aaf3201d6d956215eccb20212108651304c3eaa5ebdcdd2cadcb4499e36fa`;
+  const searchURL = `https://bad-mf.herokuapp.com/search?q=${query}&api_key=${apiKey}`;
   const result = await fetch(searchURL, {
     method: "GET",
   });
