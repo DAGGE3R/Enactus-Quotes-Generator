@@ -1,14 +1,3 @@
-// function getResp() {
-//   fetch("https://type.fit/api/quotes")
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       display(data);
-//     });
-// }
-//
-
 const apiKey = "0d8aaf3201d6d956215eccb20212108651304c3eaa5ebdcdd2cadcb4499e36fa";
 // const apiKey = "89e8468cba55df3a9014890ed6bb57309649ec8c010d4260e05b827e91bab9cb";
 
@@ -41,16 +30,3 @@ const getImages = async (query) => {
 
   return null;
 };
-// const display = (data) => {
-//   let x = Math.floor(Math.random() * 1643);
-//   document.getElementById("phrase").innerHTML = `${data[x].text}`;
-//   document.getElementById("author").innerHTML = `${data[x].author}`;
-// };
-
-// const download = () => {
-//   html2canvas(document.querySelector(".quo")).then((canvas) => {
-//     window.open(
-//       canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")
-//     );
-//   });
-// };
